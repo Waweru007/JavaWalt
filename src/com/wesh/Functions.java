@@ -2,8 +2,22 @@ package com.wesh;
 
 public class Functions {
 
-    protected static void devide (int a, int b){    //we can access a protected file only within the package name(com.Wesh)
-        System.out.println(a/b);
+    public static Account checkBigger( Account a, Account b){
+        if (a.getBalance() > b.getBalance())
+                return a;
+        else
+             return  b;
+
+    }
+
+
+    protected static double devide (int a, int b){    //we can access a protected file only within the package name(com.Wesh)
+        double results= a/b;
+
+        System.out.println(results);
+
+        return results;
+
     }
     private static void multiply (int x, int y){    //we can access within the same class
         System.out.println(x*y);
